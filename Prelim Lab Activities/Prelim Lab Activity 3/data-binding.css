@@ -1,0 +1,267 @@
+/* Header section with title and image */
+.header-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 30px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Title styling */
+.title-container {
+  text-align: left;
+  flex: none;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  align-self: flex-start;
+  margin-top: 20px;
+}
+
+.header-image {
+  transition: opacity 0.3s ease;
+}
+
+.hover-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: red;
+  padding: 10px 20px;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.image-container:hover .header-image {
+  opacity: 0.7;
+}
+
+.image-container:hover .hover-text {
+  opacity: 1;
+}
+
+.small-heading {
+  color: white;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 0.8rem;
+  margin: 3px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.main-title {
+  color: white;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 4rem;
+  margin: 0;
+  margin-bottom: -10px;
+  text-align: left;
+}
+
+.sub-title {
+  color: white;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 4rem;
+  margin: 0;
+  text-align: left;
+}
+
+.app-title {
+  color: white;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 2rem;
+  margin: 10px 0 0 0;
+}
+
+.description-title {
+  color: white;
+  font-family: "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin: 2px 0 0 0;
+}
+
+.highlighted {
+  background-color: red;
+  color: black; /* Ensure text is readable on red background */
+}
+
+/* Class binding styles for passing/failing */
+.passing {
+  color: green;
+  font-weight: bold;
+}
+
+.failing {
+  color: red;
+  font-weight: bold;
+}
+
+/* Style box for style binding demonstration */
+.style-box {
+  border: 2px solid #444;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin: 40px auto;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.card-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  background-color: #1a1a1a;
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  height: 180px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+}
+
+.card-title {
+  color: white;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 0 0 15px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.card p {
+  color: white;
+  font-family: "Arial", sans-serif;
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.card input {
+  margin: 10px 0;
+  width: 80%;
+}
+
+.button-container {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card button {
+  background-color: #2a2a2a;
+  color: white;
+  border: 2px solid #444;
+  border-radius: 8px;
+  padding: 10px 16px;
+  margin: 0;
+  width: 95px;
+  height: 42px;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.card button:hover {
+  background-color: #3a3a3a;
+  border-color: #666;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Ensure input fields are visible on dark background */
+input {
+  background-color: #1a1a1a;
+  color: white;
+  border: 1px solid #444;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+/* Style buttons for better visibility on dark background */
+button {
+  background-color: #2a2a2a;
+  color: white;
+  border: 1px solid #444;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+button:hover {
+  background-color: #3a3a3a;
+}
+
+/* angular guide 2 */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+.passing {
+  color: green;
+  font-weight: bold;
+}
+
+.failing {
+  color: red;
+  font-weight: bold;
+}
+
+.box {
+  border: 2px solid black;
+  margin-top: 10px;
+}

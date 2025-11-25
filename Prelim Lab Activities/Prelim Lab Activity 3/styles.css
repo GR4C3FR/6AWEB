@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Global font styling - Arial for all elements except navbar */
+body, html, * {
+  font-family: Arial, sans-serif;
+}
+
+/* Global background and text color styling */
+body, html {
+  background-color: #0c0c0c; /* Same as navbar color */
+  color: white;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Reset default margins and padding for better consistency */
+* {
+  box-sizing: border-box;
+}
