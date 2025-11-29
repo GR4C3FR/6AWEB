@@ -1,0 +1,33 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.home-title {
+  color: white;
+  font-family: "Arial Narrow", sans-serif;
+  font-weight: bold;
+  font-size: 8rem;
+  text-align: center;
+  margin: 0;
+  animation: fadeInPulse 3s ease-in-out infinite;
+}
+
+@keyframes fadeInPulse {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
