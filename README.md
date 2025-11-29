@@ -9,3 +9,6 @@ Description: Basic Routing and Navigation
 
 Prelim Lab Hands-on Demo
 Description: Demo and styling of Data Binding
+
+Prelim Lab Activity 4: Angular Directives Demo
+Description: Demo and Styling of the Directives Page
