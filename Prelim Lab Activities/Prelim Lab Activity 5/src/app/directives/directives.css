@@ -1,0 +1,270 @@
+/* Header section with image and title */
+.header-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin: 40px auto 30px;
+  max-width: 1000px;
+}
+
+.image-container {
+  flex: none;
+}
+
+.header-image {
+  display: block;
+}
+
+.title-container {
+  text-align: left;
+  flex: none;
+}
+
+.main-title {
+  color: white;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 4rem;
+  margin: 0;
+  margin-bottom: -10px;
+  text-align: left;
+}
+
+.sub-title {
+  color: white;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 4rem;
+  margin: 0;
+  text-align: left;
+}
+
+/* Table styling to match data-binding card layout */
+table {
+  background-color: #1a1a1a;
+  border: 2px solid #333;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  width: 90%;
+  border-collapse: separate;
+  border-spacing: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+table:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+}
+
+td {
+  color: white;
+  font-family: "Arial", sans-serif;
+  padding: 15px;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+
+tr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Fix student table layout */
+thead tr {
+  display: table-row;
+}
+
+tbody tr {
+  display: table-row;
+}
+
+thead tr th,
+tbody tr td {
+  display: table-cell;
+  width: auto;
+}
+
+.button-row td {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+}
+
+th {
+  color: white;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 2px solid #444;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+thead tr th {
+  background-color: #2a2a2a;
+}
+
+tbody tr {
+  border-top: 1px solid #333;
+}
+
+tbody tr:hover {
+  background-color: #2a2a2a;
+}
+
+/* Typography */
+h2 {
+  color: white;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin: 10px 0;
+}
+
+p {
+  color: white;
+  font-family: "Arial", sans-serif;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+/* Highlight colors */
+.highlight-blue {
+  color: white !important;
+  background-color: blue !important;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.highlight-red {
+  color: white !important;
+  background-color: red !important;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  color: white;
+  font-family: "Arial", sans-serif;
+  font-size: 1.1rem;
+  padding: 8px 0;
+  border-bottom: 1px solid #333;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+/* Button styling */
+button {
+  background-color: #2a2a2a;
+  color: white;
+  border: 2px solid #444;
+  border-radius: 8px;
+  padding: 10px 16px;
+  margin: 5px;
+  min-width: 95px;
+  height: 42px;
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #3a3a3a;
+  border-color: #666;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Input styling */
+input[type="text"] {
+  background-color: #1a1a1a;
+  color: white;
+  border: 2px solid #444;
+  padding: 10px;
+  border-radius: 4px;
+  font-family: "Arial", sans-serif;
+  font-size: 1rem;
+  width: 200px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #666;
+}
+
+input[type="text"]::placeholder {
+  color: #aaa;
+}
+
+/* Overall page styling */
+body {
+  background-color: #0a0a0a;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Status styling for student table */
+td p {
+  margin: 0;
+  padding: 5px 10px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+td p:first-child {
+  background-color: #2a4a2a;
+  color: #4ade80;
+}
+
+.directives-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.directives-title {
+  color: white;
+  font-family: "Arial Narrow", sans-serif;
+  font-weight: bold;
+  font-size: 10rem;
+  text-align: center;
+  margin: 0;
+  animation: fadeInPulse 3s ease-in-out infinite;
+}
+
+@keyframes fadeInPulse {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}

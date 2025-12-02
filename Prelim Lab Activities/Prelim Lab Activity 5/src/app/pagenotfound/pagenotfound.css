@@ -1,0 +1,51 @@
+/* filepath: e:\6AWEB2189GARCIA\PRELIMS\Prelim Lab Activities\Prelim Lab Activity 3\angular-routing-lab\src\app\pagenotfound\pagenotfound.css */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.home-title {
+  color: white;
+  font-family: "Arial Narrow", sans-serif;
+  font-weight: bold;
+  font-size: 12rem; /* increased size */
+  text-align: center;
+  margin: 0;
+  position: relative;
+  z-index: 2; /* sits on top of subtitle */
+  animation: fadeInPulse 3s ease-in-out infinite;
+}
+
+.home-subtitle {
+  color: white;
+  font-family: "Arial", sans-serif;
+  font-size: 3.5rem; /* increased size */
+  text-align: center;
+  margin: 0; /* reset margin since we position absolutely */
+  position: absolute; /* overlap under the 404 */
+  left: 50%;
+  top: 63%; /* moved lower to create more space */
+  transform: translate(-50%, -50%);
+  z-index: 1; /* behind the 404 */
+  animation: fadeInPulse 3s ease-in-out infinite; /* same animation, no delay */
+}
+
+@keyframes fadeInPulse {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
