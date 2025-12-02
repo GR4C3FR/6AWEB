@@ -12,3 +12,6 @@ Description: Demo and styling of Data Binding
 
 Prelim Lab Activity 4: Angular Directives Demo
 Description: Demo and Styling of the Directives Page
+
+Prelim Lab Activity 5: Deployed Angular on Netlify
+Description: Added a 404 page and tailwind page but mine doesn't work idk why
